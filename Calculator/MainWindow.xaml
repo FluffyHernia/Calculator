@@ -1,0 +1,50 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="550">
+    <Grid Margin="0,160,-0.4,0.4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="7" FontSize="35"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="8" FontSize="35"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="9" FontSize="35"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="4" FontSize="35"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="5" FontSize="35"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="6" FontSize="35"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="1" FontSize="35"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="2" FontSize="35"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="3" FontSize="35"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="0" FontSize="35"/>
+
+        <Button Grid.Row="1" Grid.Column="3" Content="近日公" FontSize="30"/>
+        <Button Grid.Row="1" Grid.Column="4" Content="開機能" FontSize="30"/>
+
+
+        <Button Grid.Row="0" Grid.Column="3" Content="DEL" FontSize="35"/>
+        <Button Grid.Row="0" Grid.Column="4" Content="AC" FontSize="35"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="35"/>
+        <Button Grid.Row="2" Grid.Column="4" Content="-" FontSize="35"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="=" FontSize="35"/>
+
+        <Button Grid.Row="5" Grid.Column="1" Content="近日" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="公開" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="機能" FontSize="30"/>
+
+    </Grid>
+</Window>
