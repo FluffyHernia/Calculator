@@ -24,5 +24,16 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //textBox.Text += "0";
+            textBox.Text += (sender as Button).Content;
+        }
+
+        //private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+
+        //}
     }
 }

@@ -21,30 +21,32 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0" Content="7" FontSize="35"/>
-        <Button Grid.Row="0" Grid.Column="1" Content="8" FontSize="35"/>
-        <Button Grid.Row="0" Grid.Column="2" Content="9" FontSize="35"/>
-        <Button Grid.Row="1" Grid.Column="0" Content="4" FontSize="35"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="5" FontSize="35"/>
-        <Button Grid.Row="1" Grid.Column="2" Content="6" FontSize="35"/>
-        <Button Grid.Row="2" Grid.Column="0" Content="1" FontSize="35"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="2" FontSize="35"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="3" FontSize="35"/>
-        <Button Grid.Row="3" Grid.Column="0" Content="0" FontSize="35"/>
+        <Button Grid.Row="0" Grid.Column="0" Content="7" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="8" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="9" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="4" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="5" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="6" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="1" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="2" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="3" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="0" FontSize="35" Click="Button_Click"/>
 
-        <Button Grid.Row="1" Grid.Column="3" Content="近日公" FontSize="30"/>
-        <Button Grid.Row="1" Grid.Column="4" Content="開機能" FontSize="30"/>
+        <!--<Button Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Content="近日公開機能" FontSize="30"/>-->
 
 
-        <Button Grid.Row="0" Grid.Column="3" Content="DEL" FontSize="35"/>
-        <Button Grid.Row="0" Grid.Column="4" Content="AC" FontSize="35"/>
-        <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="35"/>
-        <Button Grid.Row="2" Grid.Column="4" Content="-" FontSize="35"/>
-        <Button Grid.Row="3" Grid.Column="4" Content="=" FontSize="35"/>
+        <Button Grid.Row="0" Grid.Column="3" Content="DEL" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="0" Grid.Column="4" Content="AC" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="x" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="4" Content="/" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="4" Content="-" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="=" FontSize="35" Click="Button_Click"/>
 
-        <Button Grid.Row="5" Grid.Column="1" Content="近日" FontSize="30"/>
-        <Button Grid.Row="5" Grid.Column="2" Content="公開" FontSize="30"/>
-        <Button Grid.Row="5" Grid.Column="3" Content="機能" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="." FontSize="30" Click="Button_Click"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="" FontSize="30" Click="Button_Click"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="Ans" FontSize="30" Click="Button_Click"/>
+        <TextBox x:Name="textBox" Grid.ColumnSpan="5" HorizontalAlignment="Left" Margin="0,-153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="544" />
 
     </Grid>
 </Window>
