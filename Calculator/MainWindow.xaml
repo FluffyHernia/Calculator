@@ -37,11 +37,11 @@
 
         <Button Grid.Row="0" Grid.Column="3" Content="DEL" FontSize="35" Click="Button_Click"/>
         <Button Grid.Row="0" Grid.Column="4" Content="AC" FontSize="35" Click="Button_Click"/>
-        <Button Grid.Row="1" Grid.Column="3" Content="x" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="x" FontSize="35" Click="Button_Click_times"/>
         <Button Grid.Row="1" Grid.Column="4" Content="/" FontSize="35" Click="Button_Click"/>
         <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="35" Click="Button_Click"/>
         <Button Grid.Row="2" Grid.Column="4" Content="-" FontSize="35" Click="Button_Click"/>
-        <Button Grid.Row="3" Grid.Column="4" Content="=" FontSize="35" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="=" FontSize="35" Click="Button_Click_equal"/>
 
         <Button Grid.Row="5" Grid.Column="1" Content="." FontSize="30" Click="Button_Click"/>
         <Button Grid.Row="5" Grid.Column="2" Content="" FontSize="30" Click="Button_Click"/>

@@ -13,3 +13,5 @@ C:\Users\katat\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.Ge
 C:\Users\katat\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 C:\Users\katat\source\repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\katat\source\repos\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\katat\source\repos\Calculator\Calculator\bin\Debug\System.Management.Automation.dll
+C:\Users\katat\source\repos\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
