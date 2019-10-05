@@ -34,30 +34,45 @@ namespace Calculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (((Button)sender).Content.ToString() == "DEL") // deleteキーが押されたとき
+            string var = ((Button)sender).Content.ToString();
+
+
+            if (press_eq == true) { // イコールが押された後のとき
+                textBox.Text = string.Empty;
+                var list = new List<string>() { "+", "-", "/" };
+                if (list.Contains(var))
+                {
+                    textBox.Text = prev_ans + var;
+                }
+                else if (var == "Ans"){
+                    textBox.Text = prev_ans;
+                }
+                else
+                {
+                    textBox.Text = var;
+                }
+                press_eq = false;
+            }else if (var == "DEL") // deleteキーが押されたとき
             {
                 delete(sender, e);
+            }else if(var == "Ans") // answerキーが押されたとき
+            {
+                textBox.Text = prev_ans;
             }
-            else if (((Button)sender).Content.ToString() == "x") // かけるが押されたとき*で表示
+            else if (var == "x") // かけるが押されたとき*で表示
             {
                 textBox.Text += "*";
             }
-            else if (((Button)sender).Content.ToString() == "AC") // all-clear
+            else if (var == "AC") // all-clear
             {
                 textBox.Text = "";
             }
-            else if (((Button)sender).Content.ToString() == "=") {
+            else if (var == "=") {
                 equal(sender, e);
             }
             else
             {
-                if (press_eq == true)
-                {
-                    textBox.Text = string.Empty;
-                    press_eq = false;
-                }
-                textBox.Text += (sender as Button).Content;
-
+                textBox.Text += var;
             }
         }
 
@@ -96,6 +111,7 @@ namespace Calculator
                 output = result[0].ToString();
 
                 textBox.Text += "\r\n = " + output;
+                prev_ans = output; // 前回値の格納
             }
             //object result = invoker.Invoke(input)[0]
 
