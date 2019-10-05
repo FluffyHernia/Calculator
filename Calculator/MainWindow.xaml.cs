@@ -45,6 +45,25 @@ namespace Calculator
             textBox.Text += "*";
         }
 
+        private void Button_Click_delete(object sender, RoutedEventArgs e)
+        {
+            //textBox.Text += (sender as Button).Content;
+            string text_delete = textBox.Text;
+            if (text_delete.Length > 1)
+            {
+                text_delete = text_delete.Substring(0, text_delete.Length - 1); // 最後の一文字を消す
+            }
+            else {
+                text_delete = "";
+            }
+
+            textBox.Text = text_delete;
+        }
+
+        private void Button_Click_allclear(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = "";
+        }
 
         //  現時点でtextBoxに入っている計算をPowerShellに投げる
         private void Button_Click_equal(object sender, RoutedEventArgs e)
